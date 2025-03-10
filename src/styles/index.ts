@@ -20,4 +20,8 @@ export const { styled, getCssText, globalCss } = createStitches({
       "2xl": "2rem",
     },
   },
+  media: {
+    bp1: "(max-width: 900px)",
+    bp2: "(max-width: 1250px)",
+  },
 });

@@ -1,12 +1,16 @@
 import { styled } from "..";
 
 export const ProductContainer = styled("main", {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
+  display: "flex",
   alignItems: "stretch",
   gap: "4rem",
   maxWidth: 1180,
   margin: "0 auto",
+  padding: "0 0.75rem",
+
+  "@bp1": {
+    flexDirection: "column",
+  },
 });
 
 export const ImageContainer = styled("div", {
@@ -66,6 +70,10 @@ export const ProductDetails = styled("div", {
 
     "&:not(:disabled):hover": {
       backgroundColor: "$green300",
+    },
+
+    "@bp1": {
+      marginTop: "2.3rem",
     },
   },
 });
